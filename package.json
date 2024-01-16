@@ -14,7 +14,8 @@
     "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
-    "lint": "npm run lint:eslint && npm run lint:prettier"
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:staged": "lint-staged --allow-empty"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
