@@ -1,3 +1,10 @@
 {
-  "conventionalCommits.scopes": ["package", "deps-dev", "hooks", "deps"]
+  "conventionalCommits.scopes": [
+    "package",
+    "deps-dev",
+    "hooks",
+    "deps",
+    "scripts",
+    "README.md"
+  ]
 }
