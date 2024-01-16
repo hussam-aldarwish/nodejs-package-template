@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "package",
-        "deps-dev"
+        "deps-dev",
+        "hooks"
     ]
 }
