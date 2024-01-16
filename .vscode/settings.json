@@ -4,6 +4,7 @@
     "deps-dev",
     "hooks",
     "deps",
-    "scripts"
+    "scripts",
+    "README.md"
   ]
 }
