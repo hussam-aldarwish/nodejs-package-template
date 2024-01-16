@@ -1,0 +1,33 @@
+name: Release on tag
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Get version
+        id: get-version
+        run: echo "::set-output name=VERSION::$(echo $GITHUB_REF | sed -e 's/refs\/tags\/v//')"
+      - name: Determine prerelease
+        id: determine-prerelease
+        run: echo "::set-output name=PRERELEASE::$(echo ${{ steps.get-version.outputs.VERSION }} | grep -E 'alpha|beta|rc' > /dev/null && echo 'true' || echo 'false')"
+      - id: get-changelog
+        name: Get changelog
+        uses: superfaceai/release-changelog-action@v2
+        with:
+          path-to-changelog: CHANGELOG.md
+          version: ${{ steps.get-version.outputs.VERSION }}
+          operation: read
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          body: ${{ steps.get-changelog.outputs.changelog }}
+          prerelease: ${{ steps.determine-prerelease.outputs.PRERELEASE }}
