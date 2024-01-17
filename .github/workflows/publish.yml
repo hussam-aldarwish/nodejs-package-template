@@ -1,0 +1,37 @@
+name: Publish package
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get version
+        id: get-version
+        run: echo "::set-output name=VERSION::$(echo $GITHUB_REF | sed -e 's/refs\/tags\/v//')"
+      - name: Determine prerelease
+        id: determine-prerelease
+        run: echo "::set-output name=PRERELEASE::$(echo ${{ steps.get-version.outputs.VERSION }} | grep -E 'alpha|beta|rc' > /dev/null && echo 'true' || echo 'false')"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: |
+          if [ "${{ steps.determine-prerelease.outputs.PRERELEASE }}" == "true" ]; then
+            npm publish --tag next
+          else
+            npm publish
+          fi
+        continue-on-error: true
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
