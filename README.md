@@ -69,12 +69,19 @@ Choose one of the following methods to quickly set up and start developing your 
      - **`develop`:** for "next release" development.
      - Default names for branch prefixes.
 
-5. **Start development:**
+5. **Quickstart:**
+   Run the quickstart scrpit to initialize your project:
+
+   ```bash
+   npm run quickstart
+   ```
+
+6. **Start development:**
 
    - Begin developing your package code and features. The pre-configured tools like ESLint and Prettier will help maintain code quality and consistency.
    - Commit changes respecting the conventional commits style: https://www.conventionalcommits.org/en/v1.0.0/#summary
 
-6. **Release your package:**
+7. **Release your package:**
    Run the following command:
 
    ```bash

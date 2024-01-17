@@ -5,6 +5,7 @@
     "hooks",
     "deps",
     "scripts",
-    "README.md"
+    "README.md",
+    "workflows"
   ]
 }
