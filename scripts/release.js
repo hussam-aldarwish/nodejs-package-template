@@ -1,5 +1,9 @@
 const { inc } = require('semver');
-const { uncommittedChanges, gitBranchName, runCommand } = require('./utils');
+const {
+  gitBranchName,
+  runCommand,
+  validateUncommittedChanges
+} = require('./utils');
 const readlineSync = require('readline-sync');
 const WriteStream = require('./WriteStream');
 const conventionalChangelog = require('conventional-changelog');
@@ -27,13 +31,6 @@ async function main() {
       throw new Error(
         `Error: Current branch is '${branchName}'. Please switch to 'main', 'develop', or 'hotfix/<name>' before proceeding.`
       );
-  }
-}
-
-async function validateUncommittedChanges() {
-  const hasUncommittedChanges = await uncommittedChanges();
-  if (hasUncommittedChanges) {
-    throw new Error('Uncommitted changes detected. Aborting.');
   }
 }
 
@@ -142,7 +139,11 @@ async function commitChanges(newVersion) {
 
 async function pushChanges() {
   console.log('Pushing changes...');
-  if (readlineSync.keyInYN('Do you want to push changes to remote?')) {
+  if (
+    readlineSync.keyInYN(
+      'Would you like to push the changes to the remote repository?'
+    )
+  ) {
     await runCommand('git push --follow-tags origin main develop');
     return;
   }

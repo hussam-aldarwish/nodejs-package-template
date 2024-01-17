@@ -13,16 +13,22 @@ function runCommand(command) {
   });
 }
 
-function uncommittedChanges() {
-  return runCommand('git status --porcelain').then((output) => output.trim());
+async function uncommittedChanges() {
+  return runCommand('git status --porcelain');
 }
 
 function gitBranchName() {
-  return runCommand('git rev-parse --abbrev-ref HEAD').then((output) =>
-    output.trim()
-  );
+  return runCommand('git rev-parse --abbrev-ref HEAD');
+}
+
+async function validateUncommittedChanges() {
+  const hasUncommittedChanges = await uncommittedChanges();
+  if (hasUncommittedChanges) {
+    throw new Error('Uncommitted changes detected. Aborting.');
+  }
 }
 
 exports.runCommand = runCommand;
 exports.uncommittedChanges = uncommittedChanges;
 exports.gitBranchName = gitBranchName;
+exports.validateUncommittedChanges = validateUncommittedChanges;

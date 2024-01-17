@@ -9,6 +9,7 @@
     "url": "https://github.com/hussam-aldarwish"
   },
   "scripts": {
+    "quickstart": "node ./scripts/quickstart.js",
     "prepare": "husky install",
     "commitlint": "commitlint --edit",
     "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
