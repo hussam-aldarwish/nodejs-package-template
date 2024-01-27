@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2024-01-27
+
+### Fixed
+
+- fix(workflows): :adhesive_bandage: update PR approval and merge process for depenabot workflow ([2b10886](https://github.com/hussam-aldarwish/nodejs-package-template/commit/2b10886))
+
 ## [0.1.0] - 2024-01-17
 
 ### Added
@@ -42,5 +48,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - build(deps): bump actions/checkout from 3 to 4 (#1) ([89eec07](https://github.com/hussam-aldarwish/nodejs-package-template/commit/89eec07)), closes [#1](https://github.com/hussam-aldarwish/nodejs-package-template/issues/1)
 - build(deps): bump actions/setup-node from 3 to 4 (#2) ([1a9c60d](https://github.com/hussam-aldarwish/nodejs-package-template/commit/1a9c60d)), closes [#2](https://github.com/hussam-aldarwish/nodejs-package-template/issues/2)
 
+  [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
+
+[0.1.1]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
 [0.1.0-alpha.0]: https://github.com/hussam-aldarwish/nodejs-package-template/releases/tag/v0.1.0-alpha.0
