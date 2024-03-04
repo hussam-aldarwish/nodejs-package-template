@@ -20,7 +20,7 @@
     "release": "node ./scripts/release.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.4",
+    "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^18.4.4",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.18.1",
