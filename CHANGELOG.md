@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] - 2024-03-23
+
+### Changed
+
+- build(deps-dev): bump @commitlint/cli from 18.6.0 to 18.6.1 (#26) ([f39df5f](https://github.com/hussam-aldarwish/nodejs-package-template/commit/f39df5f)), closes [#26](https://github.com/hussam-aldarwish/nodejs-package-template/issues/26)
+- build(deps-dev): bump @commitlint/cli from 18.6.1 to 19.0.3 (#32) ([3bb75ca](https://github.com/hussam-aldarwish/nodejs-package-template/commit/3bb75ca)), closes [#32](https://github.com/hussam-aldarwish/nodejs-package-template/issues/32)
+- build(deps-dev): bump @commitlint/cli from 19.0.3 to 19.2.0 (#38) ([286407b](https://github.com/hussam-aldarwish/nodejs-package-template/commit/286407b)), closes [#38](https://github.com/hussam-aldarwish/nodejs-package-template/issues/38)
+- build(deps-dev): bump @commitlint/cli from 19.2.0 to 19.2.1 (#39) ([cc67d52](https://github.com/hussam-aldarwish/nodejs-package-template/commit/cc67d52)), closes [#39](https://github.com/hussam-aldarwish/nodejs-package-template/issues/39)
+- build(deps-dev): bump @commitlint/config-conventional (#27) ([4e4eff4](https://github.com/hussam-aldarwish/nodejs-package-template/commit/4e4eff4)), closes [#27](https://github.com/hussam-aldarwish/nodejs-package-template/issues/27)
+- build(deps-dev): bump @commitlint/config-conventional (#34) ([0c11e19](https://github.com/hussam-aldarwish/nodejs-package-template/commit/0c11e19)), closes [#34](https://github.com/hussam-aldarwish/nodejs-package-template/issues/34)
+- build(deps-dev): bump @commitlint/config-conventional (#36) ([6927a36](https://github.com/hussam-aldarwish/nodejs-package-template/commit/6927a36)), closes [#36](https://github.com/hussam-aldarwish/nodejs-package-template/issues/36)
+- build(deps-dev): bump @typescript-eslint/eslint-plugin (#25) ([ff6f151](https://github.com/hussam-aldarwish/nodejs-package-template/commit/ff6f151)), closes [#25](https://github.com/hussam-aldarwish/nodejs-package-template/issues/25)
+- build(deps-dev): bump eslint from 8.56.0 to 8.57.0 (#30) ([3cee33c](https://github.com/hussam-aldarwish/nodejs-package-template/commit/3cee33c)), closes [#30](https://github.com/hussam-aldarwish/nodejs-package-template/issues/30)
+- build(deps-dev): bump husky from 9.0.10 to 9.0.11 (#28) ([dcbd522](https://github.com/hussam-aldarwish/nodejs-package-template/commit/dcbd522)), closes [#28](https://github.com/hussam-aldarwish/nodejs-package-template/issues/28)
+
 ## [0.2.0-rc.0] - 2024-02-10
 
 ### Changed
@@ -72,7 +87,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
   [0.1.1]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0...v0.1.1
   [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
+  [0.2.0-rc.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.1...v0.2.0-rc.0
+  [0.1.1]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0...v0.1.1
+  [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
 
+[0.2.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.2.0-rc.0...v0.2.0
 [0.2.0-rc.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.1...v0.2.0-rc.0
 [0.1.1]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
