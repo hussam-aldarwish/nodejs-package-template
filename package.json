@@ -1,6 +1,6 @@
 {
   "name": "package",
-  "version": "0.2.0-rc.0",
+  "version": "0.2.0",
   "description": "",
   "license": "MIT",
   "author": {
@@ -20,9 +20,9 @@
     "release": "node ./scripts/release.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.4",
-    "@commitlint/config-conventional": "^18.4.4",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.18.1",
     "conventional-changelog": "^5.1.0",
     "eslint": "^8.56.0",
