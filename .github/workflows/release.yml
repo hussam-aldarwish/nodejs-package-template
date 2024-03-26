@@ -21,7 +21,7 @@ jobs:
         run: echo "::set-output name=PRERELEASE::$(echo ${{ steps.get-version.outputs.VERSION }} | grep -E 'alpha|beta|rc' > /dev/null && echo 'true' || echo 'false')"
       - id: get-changelog
         name: Get changelog
-        uses: superfaceai/release-changelog-action@v2
+        uses: superfaceai/release-changelog-action@v3
         with:
           path-to-changelog: CHANGELOG.md
           version: ${{ steps.get-version.outputs.VERSION }}
