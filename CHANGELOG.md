@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.3.0] - 2024-05-19
+
+### Changed
+
+- refactor: update release script ([e00fe69](https://github.com/hussam-aldarwish/nodejs-package-template/commit/e00fe69))
+- build(deps-dev): bump @commitlint/cli from 19.2.1 to 19.2.2 (#45) ([2bff9ec](https://github.com/hussam-aldarwish/nodejs-package-template/commit/2bff9ec)), closes [#45](https://github.com/hussam-aldarwish/nodejs-package-template/issues/45)
+- build(deps-dev): bump @commitlint/cli from 19.2.2 to 19.3.0 (#49) ([06ab4f6](https://github.com/hussam-aldarwish/nodejs-package-template/commit/06ab4f6)), closes [#49](https://github.com/hussam-aldarwish/nodejs-package-template/issues/49)
+- build(deps-dev): bump @commitlint/config-conventional (#46) ([ad68381](https://github.com/hussam-aldarwish/nodejs-package-template/commit/ad68381)), closes [#46](https://github.com/hussam-aldarwish/nodejs-package-template/issues/46)
+- build(deps-dev): bump conventional-changelog from 5.1.0 to 6.0.0 (#50) ([b94e7f1](https://github.com/hussam-aldarwish/nodejs-package-template/commit/b94e7f1)), closes [#50](https://github.com/hussam-aldarwish/nodejs-package-template/issues/50)
+- build(deps-dev): bump semver from 7.6.0 to 7.6.2 (#51) ([523c5d1](https://github.com/hussam-aldarwish/nodejs-package-template/commit/523c5d1)), closes [#51](https://github.com/hussam-aldarwish/nodejs-package-template/issues/51)
+- build(deps): bump superfaceai/release-changelog-action from 2 to 3 (#41) ([bb16e69](https://github.com/hussam-aldarwish/nodejs-package-template/commit/bb16e69)), closes [#41](https://github.com/hussam-aldarwish/nodejs-package-template/issues/41)
+
 ## [0.2.0] - 2024-03-23
 
 ### Changed
@@ -90,7 +102,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   [0.2.0-rc.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.1...v0.2.0-rc.0
   [0.1.1]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0...v0.1.1
   [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
+  [0.2.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.2.0-rc.0...v0.2.0
+  [0.2.0-rc.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.1...v0.2.0-rc.0
+  [0.1.1]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0...v0.1.1
+  [0.1.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0-alpha.0...v0.1.0
 
+[0.3.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.2.0-rc.0...v0.2.0
 [0.2.0-rc.0]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.1...v0.2.0-rc.0
 [0.1.1]: https://github.com/hussam-aldarwish/nodejs-package-template/compare/v0.1.0...v0.1.1

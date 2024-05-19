@@ -6,7 +6,6 @@ const {
 } = require('./utils');
 const readlineSync = require('readline-sync');
 const WriteStream = require('./WriteStream');
-const conventionalChangelog = require('conventional-changelog');
 
 main()
   .then(() => console.log('Script execution complete.'))
@@ -115,17 +114,21 @@ async function generateChangelog(newVersion) {
     }
     console.log('Generating changelog...');
     const customStream = new WriteStream();
-    conventionalChangelog({
-      releaseCount: 1
-    })
-      .on('error', (error) => {
-        reject(error);
-      })
-      .pipe(customStream)
-      .on('finish', async () => {
-        await runCommand(`npx changelog --release ${newVersion}`);
-        resolve();
-      });
+    import('conventional-changelog').then(
+      ({ default: conventionalChangelog }) => {
+        conventionalChangelog({
+          releaseCount: 1
+        })
+          .on('error', (error) => {
+            reject(error);
+          })
+          .pipe(customStream)
+          .on('finish', async () => {
+            await runCommand(`npx changelog --release ${newVersion}`);
+            resolve();
+          });
+      }
+    );
   });
 }
 
