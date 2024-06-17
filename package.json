@@ -31,7 +31,7 @@
     "husky": "^9.0.6",
     "keep-a-changelog": "^2.5.3",
     "lint-staged": "^15.2.0",
-    "prettier": "3.3.1",
+    "prettier": "3.3.2",
     "readline-sync": "^1.4.10",
     "semver": "^7.5.4"
   }
